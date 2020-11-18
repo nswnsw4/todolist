@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    height: max-content;
+    min-height: 75vh;
+    width: 75vh;
+    background:#34e7e4;
+    display:flex;
+    justify-content: center;
+    border-radius: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-container{
+    margin-top: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+.form{
+    display:flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input{
+    width:160%;
+    height:30px;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #0fbcf9;
+    outline: none;
+    padding-left: 5%;
 }
+
+.btn{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background-color: #0fbcf9;
+    border-radius: 25px;
+    width: 200px;
+    border: none;
+    color:#485460;
+    cursor: pointer;
+    margin-left: 10px;
+    outline:none;
+}
+
+.todo{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+.todo-text{
+    font-family: sans-serif;
+    color:#485460;
+}
+
+.delete-btn{
+    width:40px;
+    height: 40px;
+    color:#485460;
+    background-color: #0fbcf9 ;
+    border-radius: 25px;
+    border-style: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.cross{
+    text-decoration-line: line-through;
+}
+
+@media screen and (max-width: 650px){
+    .container{
+        width:75vh;
+    }
+}
+
+
